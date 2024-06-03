@@ -4,7 +4,7 @@ Add Joomla user to a usergroup
 
 ## Usage
 
-This simple Joomla module is used to add a user to a usergroup. It is used in the context of a Joomla website where the user is already registered and logged in. The user is added to a usergroup by clicking a button.
+This simple Joomla 4 module is used to add a user to a usergroup. It is used in the context of a Joomla website where the user is already registered and logged in. The user is added to a usergroup by clicking a button.
 
 Think of a usergroup as a role in a system. The usergroup can be used to control access to certain parts of the website.
 An application is to add the current user to a mailing list.
