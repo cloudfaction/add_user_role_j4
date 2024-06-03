@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.0.0" client="site" method="upgrade">
+    <name>MOD_ADD_USER_ROLE</name>
+    <author>Maarten Blokdijk / Arend-Henk Huzen</author>
+    <creationDate>2024</creationDate>
+    <copyright>Copyright (C) 2024 All rights reserved. jmodules.com</copyright>
+    <license>License GNU General Public License version 2 or later; see LICENSE.txt, see LICENSE.php</license>
+    <authorEmail>hello@jmodules.com</authorEmail>
+    <authorUrl>www.jmodules.com</authorUrl>
+    <version>2.0.0</version>
+    <description>MOD_ADD_USER_ROLE_XML_DESCRIPTION</description>
+
+    <namespace path="src">JModules\Module\JmAddUserRoleJ4</namespace>
+
+    <files>
+        <folder module="mod_jm_add_user_role_j4">services</folder>
+        <folder>src</folder>
+        <folder>tmpl</folder>
+        <filename>mod_jm_add_user_role_j4.xml</filename>
+    </files>
+
+    <languages folder="language">
+        <language tag="en-GB">en-GB/mod_jm_add_user_role_j4.ini</language>
+        <language tag="en-GB">en-GB/mod_jm_add_user_role_j4.sys.ini</language>
+        <language tag="nl-NL">nl-NL/mod_jm_add_user_role_j4.ini</language>
+        <language tag="nl-NL">nl-NL/mod_jm_add_user_role_j4.sys.ini</language>
+    </languages>
+
+    <updateservers>
+        <server type="extension" name="Interface Builder Updates"> https://www.jmodules.com/updates/mod_jm_add_user_role_j4.xml</server>
+    </updateservers>
+
+    <config>
+        <fields name="params">
+
+            <fieldset name="basic">
+
+            </fieldset>
+
+            <fieldset name="Text" label="MOD_ADD_USER_XML_TAB_TEXT">
+                <field name="jm_group_id" label="MOD_ADD_USER_GROUP_ID" type="text" default="2" description="Group ID to add to the current user after clicking the button." />
+                <field name="jm_button_class_subscribe" label="MOD_ADD_USER_SUBSCRIBE_BUTTON_CLASS" type="text" default="btn btn-lg btn-success" description="The class for the add button" />
+                <field name="jm_button_text_subscribe" label="MOD_ADD_USER_SUBSCRIBE_BUTTON_TEXT" type="text" default="Abonneer" description="Text for the button" />
+                <field name="jm_thankyou_text_subscribe" label="MOD_ADD_USER_SUBSCRIBE_MESSAGE" type="text" default="Je bent toegevoegd aan de verzendlijst." description="Text to show after pressing the button." />
+
+                <field name="jm_button_class_unsubscribe" label="MOD_ADD_USER_UNSUBSCRIBE_BUTTON_CLASS" type="text" default="btn btn-lg btn-danger" description="The class for the add button" />
+                <field name="jm_button_text_unsubscribe" label="MOD_ADD_USER_UNSUBSCRIBE_BUTTON_TEXT" type="text" default="Afmelden" description="Text for the unsub button" />
+                <field name="jm_thankyou_text_unsubscribe" label="MOD_ADD_USER_UNSUBSCRIBE_MESSAGE" type="text" default="Je bent afgemeld." description="Text to show after pressing the unsub button." />
+            </fieldset>
+
+            <fieldset name="advanced">
+                <field name="layout" label="JFIELD_ALT_LAYOUT_LABEL" type="modulelayout" class="form-select" validate="moduleLayout" />
+            </fieldset>
+
+        </fields>
+    </config>
+</extension>
